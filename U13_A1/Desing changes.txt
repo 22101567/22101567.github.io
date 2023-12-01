@@ -1,9 +1,0 @@
--Added 'Arial', 'Helvetica', 'sans-serif' to the font family and removed 'Calibri'
--Changed the h1 font-style from 'Calibri' to 'Goudy Old style'
--Changed the h2 font-style 'Calibri' to 'Ariel'
--Changed the p font-style 'Calibri' to 'Ariel
--Changed title on'Apple' page to 'Newest From Apple'
--Changed text on 'Mobile Phones' to be smaller
--Changed title on'Samsung' page to 'Newest From Samsung'
--Added the "Most used networks of 2022" subheading on the 'Netowrks' page
--Changed pretty much every image size
