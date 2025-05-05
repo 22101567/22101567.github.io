@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celtec.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="banner">
+            <a href="index.htm">
+            <img src="Images/banner.png" alt="Banner Image">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="blog.htm">Our Blog</a></li>
+                <li><a href="aboutus.htm">About Us</a></li>
+                <li><a href="products.htm">Our Products</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+
+     <div class="center-square"></div>
+
+     <h1 style="position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;">
+     Contact Us
+     </h1>
+
+     <div class="line3"></div>
+
+     <div style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);
+            display: flex; gap: 10px; z-index: 1000; background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px; border-radius: 10px; color: white;">
+
+
+
+          <img src="Images/logos.png" alt="Our Contact"
+          style="position: absolute; top: -200%; left: 50%; transform: translate(-50%, -100%);
+          z-index: 1000; width: 800px;">
+
+     <h2 style="position: absolute; top: -230%; left: -625%; transform: translate(-50%, -50%); z-index: 1000;">
+     Instagram
+     </h2>
+
+     <h2 style="position: absolute; top: -225%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;">
+     Facebook
+     </h2>
+
+     <h2 style="position: absolute; top: -225%; left: 725%; transform: translate(-50%, -50%); z-index: 1000;">
+     Twitter/X
+     </h2>
+
+
+        <form id="contactForm" style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);
+            display: flex; gap: 10px; z-index: 1000; background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px; border-radius: 10px; color: white;">
+
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="1" required style="width: 300px;"></textarea>
+            </div>
+
+            <div style="align-self: flex-end;">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const subject = encodeURIComponent('New Contact Form Submission');
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+            window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
+        });
+        </script>
+
+</div>
+
+</body>
+</html>

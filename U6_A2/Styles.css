@@ -1,0 +1,150 @@
+ /* General Body Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background: url('images/itemployees.jpg') top center / cover no-repeat;
+        }
+
+        /* Header Container (Flex layout) */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Banner Image */
+        .banner img {
+            width: 300px;
+            height: auto;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover,
+        nav a:active {
+            color: #a92d56;
+            transform: scale(1.2);
+        }
+
+        /* Headings (if used later) */
+        h1 {
+            font-family: Courier New, sans-serif;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        /* Content Area (if needed later) */
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .center-square {
+           width: 1600px;             /* size of the square */
+           height: 650px;
+           background-color: rgba(0, 0, 0, 0.8); /* same as nav background */
+           margin: auto;             /* horizontal center */
+           position: absolute;
+           top: 55%;
+           left: 50%;
+           transform: translate(-50%, -50%); /* vertical + horizontal centering */
+           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* optional: adds a soft shadow */
+        }
+
+       .scroll-box {
+           width: 1600px;             /* size of the square */
+           height: 650px;
+           overflow-y: auto;        /* Enables vertical scrolling */
+           overflow-x: hidden;   /* ✅ disables horizontal scroll */
+           background-color: rgba(0, 0, 0, 0.8); /* Same style as your nav bar */
+           margin: auto;             /* horizontal center */
+           position: absolute;
+           top: 55%;
+           left: 50%;
+         transform: translate(-50%, -50%); /* vertical + horizontal centering */
+         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* optional: adds a soft shadow */
+        }
+
+       .line {
+         position: absolute;  /* Allows you to position the line anywhere */
+         width: 50%;  /* Adjust width as needed */
+         height: 3px;  /* Adjust thickness of the line */
+         background-color: #ffffff;  /* Line color */
+         top: 40%;  /* Adjust the vertical position */
+         left: 40%;  /* Adjust the horizontal position */
+        }
+
+       .line2 {
+         position: absolute;  /* Allows you to position the line anywhere */
+         width: 40%;  /* Adjust width as needed */
+         height: 3px;  /* Adjust thickness of the line */
+         background-color: #ffffff;  /* Line color */
+         top: 65%;  /* Adjust the vertical position */
+         left: 10%;  /* Adjust the horizontal position */
+        }
+
+       .line3 {
+         position: absolute;  /* Allows you to position the line anywhere */
+         width: 80%;  /* Adjust width as needed */
+         height: 3px;  /* Adjust thickness of the line */
+         background-color: #ffffff;  /* Line color */
+         top: 35%;  /* Adjust the vertical position */
+         left: 10%;  /* Adjust the horizontal position */
+        }
+
+       .line4 {
+         position: absolute;  /* Allows you to position the line anywhere */
+         width: 50%;  /* Adjust width as needed */
+         height: 3px;  /* Adjust thickness of the line */
+         background-color: #ffffff;  /* Line color */
+         top: 28%;  /* Adjust the vertical position */
+         left: 25%;  /* Adjust the horizontal position */
+        }
+
+       .line5 {
+         position: absolute;  /* Allows you to position the line anywhere */
+         width: 20%;  /* Adjust width as needed */
+         height: 3px;  /* Adjust thickness of the line */
+         background-color: #ffffff;  /* Line color */
+         top: -35%;  /* Adjust the vertical position */
+         left: 7.5%;  /* Adjust the horizontal position */
+        }
+
+       .line6 {
+         position: absolute;  /* Allows you to position the line anywhere */
+         width: 20%;  /* Adjust width as needed */
+         height: 3px;  /* Adjust thickness of the line */
+         background-color: #ffffff;  /* Line color */
+         top: -35%;  /* Adjust the vertical position */
+         right: 7.5%;  /* Adjust the horizontal position */
+        }
