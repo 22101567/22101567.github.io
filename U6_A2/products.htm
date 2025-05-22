@@ -23,6 +23,16 @@
             </ul>
         </nav>
 
+<script>
+var Digital=new Date()
+var hours=Digital.getHours()
+if (hours>=0&&hours<=12)
+document.write('<b>Good Morning, welcome to our website.</b>')
+else if (hours>12&&hours<=17)
+document.write('<b>Good Afternoon, welcome to our website.</b>')
+else document.write('<b>Good Evening, welcome to our website.</b>')
+</script>
+
      <div class="scroll-box">
 
      <h1 style="position: absolute; top: 8%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;">
@@ -81,17 +91,6 @@
     </p>
 
     </div>
-
-<script>
-var Digital=new Date()
-var hours=Digital.getHours()
-if (hours>=0&&hours<=12)
-document.write('<b>Good Morning, welcome to our website.</b>')
-else if (hours>12&&hours<=17)
-document.write('<b>Good Afternoon, welcome to our website.</b>')
-else document.write('<b>Good Evening, welcome to our website.</b>')
-</script>
-
 
 </body>
 </html>
